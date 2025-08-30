@@ -5,4 +5,4 @@ export interface IEventRepository{
     findAll():Promise<IEvent[]>;
     create(event:Partial<IEvent>):Promise<IEvent>;
     update(event:IEvent):Promise<IEvent | null>;
-    delete(id:string):Promise<boolean>;}
+    delete(id:string):Promise<void>;}
