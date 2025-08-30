@@ -6,4 +6,4 @@
     ticketId: ObjectId;
     quantity: number;
     status: string;
-    stripePaymentId?: string;}
+    stripePaymentId: string;}
