@@ -5,7 +5,9 @@ export interface IEvent{
     title: string;
     description: string;
     date: Date;
+    ticketPrice:number;
+    ticketQuantity:number;
+    organizerId: ObjectId;
     location: string;
     EventImage:string
-
 }

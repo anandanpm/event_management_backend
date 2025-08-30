@@ -14,9 +14,11 @@ export class CreateEventDto {
   location: string;
 
   @IsNumber()
+  @IsOptional()
   ticketPrice: number;
 
   @IsNumber()
+  @IsOptional()
   ticketQuantity: number;
 
   @IsOptional()

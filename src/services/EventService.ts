@@ -6,7 +6,6 @@ import { CreateEventDto } from '../dto/event/CreateEventDto';
 import { UpdateEventDto } from '../dto/event/UpdateEventDto';
 import { EventResponseDto } from '../dto/event/EventResponseDto';
 import { EventMapper } from '../mappers/EventMapper';
-import { ObjectId } from 'mongodb';
 
 @injectable()
 export class EventService implements IEventService {

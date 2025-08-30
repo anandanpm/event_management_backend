@@ -16,6 +16,15 @@ export class Event{
     date: Date;
 
     @Column()
+    ticketPrice:number;
+
+    @Column()
+    ticketQuantity:number;
+
+    @Column()
+    organizerId: ObjectId;
+
+    @Column()
     location: string;
 
     @Column({nullable:true})
