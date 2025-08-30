@@ -1,8 +1,9 @@
 import { IsString, IsNumber } from 'class-validator';
+import { ObjectId } from 'mongodb';
 
 export class CreateTicketDto {
   @IsString()
-  eventId: string;
+  eventId: ObjectId;
 
   @IsString()
   type: string;
