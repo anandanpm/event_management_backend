@@ -9,15 +9,15 @@ export class UpdateEventDto {
   @IsString()
   description?: string;
 
-  @IsOptional()
+
   @IsDateString()
-  date?: string;
+  date?: Date;
 
   @IsOptional()
   @IsString()
   location?: string;
 
-  @IsOptional()
+ 
   @IsString()
   EventImage?: string;
 }

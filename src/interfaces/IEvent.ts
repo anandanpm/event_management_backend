@@ -6,6 +6,6 @@ export interface IEvent{
     description: string;
     date: Date;
     location: string;
-    EventImage?:string
+    EventImage:string
 
 }

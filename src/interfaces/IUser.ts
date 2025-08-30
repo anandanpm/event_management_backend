@@ -9,7 +9,7 @@ export interface IUser{
 }
 
 export interface IUserDTO {
-  _id?: ObjectId;
+  _id: ObjectId;
   name: string;
   email: string;
   role: string; 

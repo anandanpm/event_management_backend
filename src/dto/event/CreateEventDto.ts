@@ -8,7 +8,7 @@ export class CreateEventDto {
   description: string;
 
   @IsDateString()
-  date: string;
+  date: Date;
 
   @IsString()
   location: string;
