@@ -1,4 +1,4 @@
-import { IsString, IsDateString, IsOptional } from 'class-validator';
+import { IsString, IsDateString, IsOptional, IsNumber } from 'class-validator';
 
 export class CreateEventDto {
   @IsString()
@@ -12,6 +12,12 @@ export class CreateEventDto {
 
   @IsString()
   location: string;
+
+  @IsNumber()
+  ticketPrice: number;
+
+  @IsNumber()
+  ticketQuantity: number;
 
   @IsOptional()
   @IsString()

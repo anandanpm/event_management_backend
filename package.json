@@ -4,6 +4,9 @@
   "description": "'machine_task_event_management_backend(repo-architecture)",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "ts-node-dev src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anandakrishnan PM",

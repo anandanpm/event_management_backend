@@ -6,7 +6,7 @@ import { Booking } from "../models/Booking";
 
 export const AppDataSource = new DataSource({ 
     type:"mongodb",
-    url:process.env.MONGODB_URL||'mongodb://localhost:27017/event_management',
+    url:process.env.MONGODB_URL,
     logging:true,
     entities:[User,Event,Ticket,Booking],
   })

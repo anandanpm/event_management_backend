@@ -19,6 +19,7 @@ export class AuthService implements IAuthService {
 
   async register(dto: RegisterDto): Promise<AuthResponseDto> {
     const existing = await this.userRepository.findByEmail(dto.email);
+    console.log(existing,'the existing user is comming here')
     if (existing) throw new Error('User already exists');
 
     const hashedPassword = await bcrypt.hash(dto.password, 10);
@@ -32,6 +33,8 @@ export class AuthService implements IAuthService {
     await this.emailService.sendWelcomeEmail(dto.email, dto.name);
 
     const token = signToken({ id: user._id.toString(), role: user.role });
+    console.log(token,'the token is comming here')
+    console.log(user,'the user is comming here')
     return { token, user: { ...user, _id: user._id.toString() } };
   }
 
